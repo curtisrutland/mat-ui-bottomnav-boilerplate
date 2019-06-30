@@ -10,7 +10,7 @@ import { testRoute } from "./Test";
 export default function Home() {
   const { toggleTheme } = useThemeToggle();
   return (
-    <Page>
+    <Page title={homeRoute.name} activeRoute={homeRoute.path}>
       <Typography>Hello World</Typography>
       <LinkButton variant="contained" to={testRoute.path} color="secondary">Go To Example Page</LinkButton>
       <Button variant="outlined" color="primary" onClick={toggleTheme}>Toggle Theme</Button>

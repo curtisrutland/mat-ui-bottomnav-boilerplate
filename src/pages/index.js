@@ -8,6 +8,11 @@ export const ROUTES = [
   testRoute
 ]
 
+export const BOTTOM_NAV_ROUTES = [
+  homeRoute,
+  testRoute
+];
+
 function mapRoutes(route) {
   const { Component, path, defaultRoute = false } = route;
   return (
